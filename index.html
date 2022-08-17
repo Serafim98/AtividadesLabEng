@@ -16,17 +16,19 @@
 
 <body>
     <label for="palpite">Digite seu palpite:</label>
-
     <input type="text" id="palpite">
+    <button onclick="enviarPalpite()" id="btn_Palpitar">Palpitar</button>
+    <div id="chances"></div>
 
-    <button onclick="enviarPalpite()">Palpitar</button>
-
+    <p>Palpites anteriores:</p>
+    <div id="histPalpites">
+    </div>
     <div id="resultado">
-
-        <p>Palpites anteriores:</p>
-
     </div>
 
+
+    
+    <button id="reiniciar" onclick="reiniciar()">Reiniciar</button>
     <script src="Desafio.js"></script>
 
 </body>
