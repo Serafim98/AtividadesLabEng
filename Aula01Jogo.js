@@ -29,7 +29,6 @@ function enviarPalpite() {
 
     }
 
-    alert(chances)
     document.getElementById("chances")= chances;
     if(chances == 0){
         divResultado.innerHTML = "Chances Esgotadas";
