@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Add via JS</title>
+</head>
+<body>
+        <input id="entrada">
+        <button id = "adicionar">Adicionar</button>
+    <script>
+        
+        
+        document.getElementById("adicionar").addEventListener("click", function AdicionaElemento(){  
+            let ol  = document.createElement("ol");
+            let entrada = document.getElementById("entrada");
+            let li = document.createTextNode(entrada.value);
+            ol.appendChild(li);
+            document.body.appendChild(ol);
+       });
+
+    </script>
+</body>
+</html>
