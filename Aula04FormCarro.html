@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carro</title>
+</head>
+<body>
+
+    <label for="marca">Marca</label>
+    <input type="text" id="marca" name="marca">
+
+    <label for="modelo">Modelo</label>
+    <input type="text" id="modelo" name="modelo">
+
+    <label for="ano">Ano</label>
+    <input type="text" id="ano" name="ano">
+
+    <label for="cor">Cor</label>
+    <input type="text" id="cor" name="cor">
+
+    <label for="kilometragem">Kilometragem</label>
+    <input type="text" id="kilometragem" name="kilometragem">
+
+    <label for="valor_fipe">Valor Fipe</label>
+    <input type="text" id="valor_fipe" name="valor_fipe">
+
+    <button id="calcular">Calcular</button>
+    <script>
+ 
+    document.getElementById("calcular").addEventListener("click", function calculaFipe(){
+        carro = new Carro();
+        carro.setAno(document.getElementById("ano").value);
+        carro.setCor(document.getElementById("cor").value);
+        carro.setMarca(document.getElementById("marca").value);
+        carro.setModelo(document.getElementById("modelo").value);
+        carro.setValor_Fipe(document.getElementById("valor_fipe").value);
+        console.log("idade do carro" +carro.anosUtilizacao());
+        console.log("valor do carro" +carro.valorMercado());
+
+    })
+
+    function Carro(){
+        
+        let marca; 
+        let modelo;
+        let ano;
+        let cor;
+        let kilometragem;
+        let valor_fipe;
+        
+        this.anosUtilizacao = function(){
+            return new Date().getFullYear() - this.ano+1;
+        }
+
+        this.valorMercado = function(){
+            let idade = this.anosUtilizacao();
+            console.log("kilometragem " +this.kilometragem);
+            if(this.kilometragem/idade <= 30000){
+                console.log("rodou menos de 30 mil")
+                this.valor_fipe = this.valor_fipe * 1.10;
+                console.log("valor novo do carro" +this.valor_fipe)
+            }
+            if((this.kilometragem/idade > 30000)&&(this.kilometragem/this.ano <=50000))
+                this.valor_fipe = this.valor_fipe;
+            if(this.kilometragem/idade > 50000)
+                this.valor_fipe = this.valor_fipe * 0.90;
+
+            return this.valor_fipe;
+        }
+
+        this.setMarca = function(Marca){
+            this.marca = Marca;
+        }
+
+        this.setModelo = function(Modelo){
+            this.modelo = Modelo;
+        }
+
+        this.setAno = function (Ano){
+            this.ano = Ano;
+        }
+
+        this.setCor = function(Cor){
+            this.cor = Cor;
+        }
+
+        this.getKilometragem = function(Kilometragem){
+            this.kilometragem = Kilometragem;
+        }
+
+        this.setValor_Fipe = function(valorFipe){
+            this.valor_fipe = valorFipe;
+        }
+
+        this.getMarca = function(){
+            return this.marca;
+        }
+
+        this.getModelo = function(){
+            return this.modelo;
+        }
+
+        this.getAno = function(){
+            return this.ano;
+        }
+
+        this.getCor = function(){
+            return this.cor;
+        }
+
+        this.getKilometragem = function(){
+            return this.kilometragem;
+        }
+
+        this.getValorFipe = function(){
+            return this.valor_fipe;
+        }
+    }
+    </script>
+</body>
+</html>
