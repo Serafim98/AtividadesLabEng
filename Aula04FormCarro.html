@@ -36,6 +36,7 @@
         carro.setMarca(document.getElementById("marca").value);
         carro.setModelo(document.getElementById("modelo").value);
         carro.setValor_Fipe(document.getElementById("valor_fipe").value);
+        carro.setKilometragem(document.getElementById("kilometragem").value);
         console.log("idade do carro" +carro.anosUtilizacao());
         console.log("valor do carro" +carro.valorMercado());
 
@@ -56,12 +57,8 @@
 
         this.valorMercado = function(){
             let idade = this.anosUtilizacao();
-            console.log("kilometragem " +this.kilometragem);
-            if(this.kilometragem/idade <= 30000){
-                console.log("rodou menos de 30 mil")
+            if(this.kilometragem/idade <= 30000)
                 this.valor_fipe = this.valor_fipe * 1.10;
-                console.log("valor novo do carro" +this.valor_fipe)
-            }
             if((this.kilometragem/idade > 30000)&&(this.kilometragem/this.ano <=50000))
                 this.valor_fipe = this.valor_fipe;
             if(this.kilometragem/idade > 50000)
@@ -86,7 +83,7 @@
             this.cor = Cor;
         }
 
-        this.getKilometragem = function(Kilometragem){
+        this.setKilometragem = function(Kilometragem){
             this.kilometragem = Kilometragem;
         }
 
