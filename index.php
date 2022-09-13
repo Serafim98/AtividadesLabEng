@@ -47,7 +47,7 @@
     </style>
 </head>
 <body class="container">
-    <h1>Atividades Laboratório de Banco de Dados</h1>
+    <h1>Atividades Laboratório de Engenharia de Software</h1>
     <h5 class="text-secondary">Luis Fernando da Silva Serafim</h2>
     <div class="container-md">
         <div class="atividade">
