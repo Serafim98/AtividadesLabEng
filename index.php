@@ -63,7 +63,7 @@
             <i class="fa-solid fa-code"></i><a class="linkAtividade" href="./Aula03Palindromo.html">Aula 03 - Palíndromo</a><br>
         </div>
         <div class="atividade">
-            <i class="fa-solid fa-code"></i><a class="linkAtividade" href="#"></a><br>
+            <i class="fa-solid fa-code"></i><a class="linkAtividade" href="./atividadeReact.html">Atividade React</a><br>
         </div>
         <div class="atividade">
             <i class="fa-solid fa-code"></i><a class="linkAtividade" href="#"></a><br>
