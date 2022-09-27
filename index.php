@@ -63,7 +63,19 @@
             <i class="fa-solid fa-code"></i><a class="linkAtividade" href="./Aula03Palindromo.html">Aula 03 - Palíndromo</a><br>
         </div>
         <div class="atividade">
+            <i class="fa-solid fa-code"></i><a class="linkAtividade" href="./Aula04FormCarro.html">Aula 04 - Carro</a><br>
+        </div>
+        <div class="atividade">
             <i class="fa-solid fa-code"></i><a class="linkAtividade" href="./atividadeReact.html">Atividade React</a><br>
+        </div>
+        <div class="atividade">
+            <i class="fa-solid fa-code"></i><a class="linkAtividade" href="./vestibular_fatec/public/index.html">Vestibular Fatec</a><br>
+        </div>
+        <div class="atividade">
+            <i class="fa-solid fa-code"></i><a class="linkAtividade" href="#"></a><br>
+        </div>
+        <div class="atividade">
+            <i class="fa-solid fa-code"></i><a class="linkAtividade" href="#"></a><br>
         </div>
         <div class="atividade">
             <i class="fa-solid fa-code"></i><a class="linkAtividade" href="#"></a><br>
